@@ -1,0 +1,220 @@
+@import "resets.css";
+
+/* -------------------  MOBILE  --------------------- */
+
+h1,
+h2,
+h3 {
+  font-weight: 900;
+}
+
+h1 {
+  font-size: 3rem;
+  margin: 20px;
+}
+
+h2 {
+  font-size: 2.5rem;
+}
+
+h3 {
+  font-size: 2rem;
+  margin: 20px;
+}
+
+ul {
+  font-size: 2rem;
+  line-height: 2;
+  width: 80%;
+  margin: 0 auto;
+  list-style-type: disc;
+}
+
+body {
+  font-family: Arial;
+  min-height: 100vh;
+  font-family: 'Kufam', cursive;
+  color: white;
+  background-image: url("../images/outer-space.jpg");
+}
+
+#root {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: stretch;
+  min-height: 90vh;
+}
+
+header {
+  text-align: center;
+}
+
+main {
+  flex: 1;
+  padding: 20px;
+}
+
+.rover-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.rover-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-image: url("../images/rover.jpg");
+  background-position: center;
+  background-size: 0;
+  background-repeat: no-repeat;
+  color: white;
+  width: 300px;
+  height: 300px;
+  margin: 30px auto;
+  border-radius: 20px;
+  cursor: pointer;
+  box-shadow: 10px 10px 10px;
+  font-family: 'Kufam', cursive;
+  opacity: 0.4;
+  transition: 2s;
+  background-color: black;
+}
+
+.rover-card:hover,
+.rover-card:focus,
+.rover-card:active {
+  background-size: 100%;
+  opacity: 1;
+  outline: none;
+}
+
+.card-title {
+  color: whitesmoke;
+}
+
+.photo-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.photo {
+  width: 80%;
+  margin: 30px auto;
+  border: 8px groove;
+}
+
+.back-button {
+  display: block;
+  background-color: #f1f2f1;
+  color: BLACK;
+  padding: 5px 50px;
+  margin: 40px auto;
+  border-radius: 30px;
+  font-size: 1.5rem;
+  font-family: 'Kufam', cursive;
+  box-shadow: 0 0 30px whitesmoke;
+  cursor: pointer;
+}
+
+.back-button:hover,
+.back-button:focus {
+  border: 2px solid whitesmoke;
+  outline: none;
+}
+
+footer {
+  text-align: center;
+}
+
+/* -------------------  TABLET  --------------------- */
+@media (min-width: 768px) {
+  h1 {
+    font-size: 3.8rem;
+  }
+
+  h2 {
+    font-size: 4rem;
+  }
+
+  .rover-card {
+    width: 500px;
+    height: 500px
+  }
+
+  .photo-container {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  .photo {
+    width: 40%;
+    margin: 20px;
+  }
+}
+
+/* -------------------  DESKTOP  -------------------- */
+
+@media (min-width: 1224px) {
+
+  h1 {
+    font-size: 5rem;
+  }
+
+  h2 {
+    font-size: 2.5rem;
+  }
+
+  .rover-container {
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  .rover-card {
+    width: 320px;
+    height: 320px;
+    margin: 30px;
+  }
+  
+  .photo {
+    width: 25%;
+    margin: 40px;
+  }
+
+}
+
+/* -------------------  LARGE SCREENS  -------------- */
+
+@media (min-width: 1824px) {
+
+  h1 {
+    font-size: 7rem;
+  }
+
+  h2 {
+    font-size: 4rem;
+  }
+
+  h3 {
+    font-size: 3rem;
+  }
+
+  ul {
+    font-size: 3rem;
+  }
+
+  .rover-card {
+    width: 500px;
+    height: 500px;
+    margin: 50px;
+  }
+  
+  .photo {
+    width: 20%;
+    margin: 40px;
+  }
+}
